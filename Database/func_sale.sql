@@ -35,7 +35,8 @@ CREATE TABLE `funcionario` (
   `nome_func` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `idade_func` int(11) NOT NULL,
   `salario_func` decimal(10,2) NOT NULL,
-  `cpf_func` varchar(50) COLLATE utf8_unicode_ci NOT NULL
+  `cpf_func` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY(`id_func`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -49,29 +50,10 @@ CREATE TABLE `venda` (
   `cliente_venda` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `vendedor_venda` int(11) NOT NULL,
   `preco_venda` decimal(10,2) NOT NULL,
-  `data_venda` datetime NOT NULL
+  `data_venda` datetime NOT NULL,
+  PRIMARY KEY(`id_venda`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- Índices para tabelas despejadas
---
-
---
--- Índices para tabela `funcionario`
---
-ALTER TABLE `funcionario`
-  ADD PRIMARY KEY (`id_func`);
-
---
--- Índices para tabela `venda`
---
-ALTER TABLE `venda`
-  ADD PRIMARY KEY (`id_venda`),
-  ADD KEY `venda_ibfk_1` (`vendedor_venda`);
-
---
--- Restrições para despejos de tabelas
---
 
 --
 -- Limitadores para a tabela `venda`
