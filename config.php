@@ -5,7 +5,7 @@ global $currentDate;
 $currentDate = date("Y-m-d H:i:s", time());
 
 global $db;
-define("URL_BASE","http://localhost/func_sale");
+define("URL_BASE","http://localhost/PHP-MVC");
 $database["name"] = "func_sale";
 $database["host"] = "localhost";
 $database["user"] = "root";
