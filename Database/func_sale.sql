@@ -31,7 +31,7 @@ USE `func_sale`;
 --
 
 CREATE TABLE `funcionario` (
-  `id_func` int(11) NOT NULL,
+  `id_func` int(11) NOT NULL AUTO_INCREMENT,
   `nome_func` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `idade_func` int(11) NOT NULL,
   `salario_func` decimal(10,2) NOT NULL,
@@ -45,7 +45,7 @@ CREATE TABLE `funcionario` (
 --
 
 CREATE TABLE `venda` (
-  `id_venda` int(11) NOT NULL,
+  `id_venda` int(11) NOT NULL AUTO_INCREMENT,
   `cliente_venda` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `vendedor_venda` int(11) NOT NULL,
   `preco_venda` decimal(10,2) NOT NULL,
