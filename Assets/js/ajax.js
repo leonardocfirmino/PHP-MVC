@@ -228,14 +228,14 @@ function editSale(e){
     e.preventDefault();
     const url = `${BASE_URL}/sales/index`;
     const eId = $("#eId").val();
-    const evendedor = $("#evendedore").val();
+    const eClient = $("#eCliente").val();
     const eSaler = $("#eVendedor").val();
     const ePrice = $("#ePreco").val().replace(".","").replace(",",".");
     const eDate = $("#eDate").val();
     $.ajax({
         type:"POST",
         url: url,
-        data: {eId: eId,evendedore: evendedor,eVendedor: eSaler,ePreco: ePrice,eDate:eDate},
+        data: {eId: eId,eCliente: eClient,eVendedor: eSaler,ePreco: ePrice,eDate:eDate},
         success: function(data){
             Swal.fire({
                 title: 'Alterada!',

@@ -14,7 +14,7 @@
                     echo "<option value=".$vend['id_func'].">".$vend['nome_func']."</option>";
                 }?>
             </select>
-            <label>Materialize Select</label>
+            <label>Vendedores</label>
         </div>
 
         <div class="input-field">
