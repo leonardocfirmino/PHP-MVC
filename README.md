@@ -22,7 +22,7 @@
 
 ## Preview
 
-[preview](https://user-images.githubusercontent.com/61749864/75806616-c7e3e180-5d62-11ea-86f7-dc5211b427f0.PNG)
+[https://user-images.githubusercontent.com/61749864/75806616-c7e3e180-5d62-11ea-86f7-dc5211b427f0.PNG]
 
-## License
+## Licença
 [MIT](https://choosealicense.com/licenses/mit/)
